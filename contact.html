@@ -1,4 +1,4 @@
-<!doctype html>
+<!Doctype html>
 <html lang="en-us">
 
 <head>
@@ -6,7 +6,7 @@
     
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta charset="UTF-8">
-    <title>Contact | Your Name</title>
+    <title>Contact | Isaiah Mitchell</title>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -18,7 +18,7 @@
 
   <header id="masthead">
     <div class="container">
-      <a href="index.html" id="logo">Your Name</a>
+      <a href="index.html" id="logo">Isaiah Mitchell</a>
       <nav>
         <a href="index.html">About</a>
         <a href="portfolio.html">Portfolio</a>
@@ -27,47 +27,37 @@
     </div>
   </header>
 
-  <div id="main-container" class="container">
-    <section class="main-section">
-      <h1>Contact</h1>
-      <form>
-            <div class="form-row align-items-center">
-              <div class="col-sm-3 my-1">
-                <label class="sr-only" for="inlineFormInputName">Name</label>
-                <input type="text" class="form-control" id="inlineFormInputName" placeholder="Jane Doe">
-              </div>
-              <div class="col-sm-3 my-1">
-                <label class="sr-only" for="inlineFormInputGroupUsername">Username</label>
-                <div class="input-group">
-                  <div class="input-group-prepend">
-                    <div class="input-group-text">@</div>
-                  </div>
-                  <input type="text" class="form-control" id="inlineFormInputGroupUsername" placeholder="Username">
-                </div>
-              </div>
-              <div class="col-auto my-1">
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" id="autoSizingCheck2">
-                  <label class="form-check-label" for="autoSizingCheck2">
-                    Remember me
-                  </label>
-                </div>
-              </div>
-              <div class="col-auto my-1">
-                <button type="submit" class="btn btn-primary">Submit</button>
-              </div>
-            </div>
-          </form>
-      
-     </section>
-
-  </div>
-
-  <footer>
-    <div class="container">
-      Copyright &copy; 
+    <div id="main-container" class="container">
+      <section class="main-section">
+        <h1>Contact</h1>
+        
+        <form id="contact-form">
+          <ul>
+            <li>
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" placeholder="John Smith" required="required"
+            </li>
+            <li>
+              <label for="email">Email</label>
+              <input type="text" id="name" name="email" placeholder="example@gmail.com" required="required"
+            </li>
+            <li>
+              <label for="message">Message</label>
+              <textarea id="message" name="message" required= "required"</textarea>
+            </li>
+          </ul>
+          <input type="submit">
+        </form> 
+     
+      </section>
+   
     </div>
-  </footer>
+
+    <footer>
+      <div class="container">
+        Copyright &copy; 
+      </div>
+    </footer>
 </body>
 
 </html>
