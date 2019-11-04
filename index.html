@@ -1,41 +1,69 @@
-<!DOCTYPE html>
+<!Doctype html>
 <html lang="en-us">
 
 <head>
   <meta charset="UTF-8">
-  <title>Relative Paths Assignment 4</title>
+  <title>Portfolio | Isaiah Mitchell</title>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
-  <!-- Fill in the href to the CSS such that this HTML file can access the CSS -->
-  <!-- Don't move the HTML or CSS file. Use Relative Linking -->
-  <link rel="stylesheet" type="text/css" href="../style.css">
+  <meta charset="UTF-8">
+  <title>Layout with floats</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="float-style.css">
+
+  <meta charset="UTF-8">
+  <title>Hover Styling</title>
+
+  <meta charset="UTF-8">
+  <title>Sticky Footer</title>
+
+  <meta charset="UTF-8">
+  <title>CSS Positioning</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css" integrity="sha256-7VVaJ5GDwFQiLIc+eNksQLUSSY5JNZtqv9o2BI8UGYg=" crossorigin="anonymous" />
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="static.css">
+
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
 <body>
-  <header>
-    <h1>Student Bio</h1>
+
+  <header id="masthead">
+    <div class="container">
+      <a href="index.html" id="logo">Isaiah Mitchell</a>
+      <nav>
+        <a href="index.html">About</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
   </header>
 
-  <div class="container">
+  <div id="main-container" class="container">
+    <section class="main-section">
+      <h1>About Me</h1>
 
-    <section id="main-bio">
+      <img src="assets/images/IMG-3445.JPG" class="auth-image" alt="Isaiah Mitchell">
 
-      <h2>Your Name</h2>
+      <p>I am who I am. Theres too many ways to describe just a little about me.</p>
 
-      <img id="bio-image" src="https://placehold.it/200x200" alt="Your Name">
+      <p>In one word I would say im a Generalist.</p>
 
-      <p>Write a short paragraph or two about yourself, or use placeholder text from <a href="http://www.lipsum.com/">www.lipsum.com</a></p>
+      <p>"Sacrifice = Currency to get whatever you</p>
+
     </section>
 
-    <section id="contact-info">
-      <h2>Contact Info</h2>
-      <ul>
-        <li><strong>Email:</strong> <a href="#">someplace@gmail.com</a></li>
-        <li><strong>Github:</strong> <a href="#">sampleName</a></li>
-        <li><strong>Portfolio:</strong> <a href="#">coming soon</a></li>
-      </ul>
-    </section>
   </div>
 
+  <footer>
+    <div class="container">
+      Copyright &copy; 
+    </div>
+  </footer>
 </body>
 
 </html>
