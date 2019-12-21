@@ -2,75 +2,108 @@
 <html lang="en-us">
 
 <head>
-  <meta charset="UTF-8">
-  <title>Portfolio | Isaiah Mitchell</title>
-  <title>Bootstrap Example</title>
+<meta charset="UTF-8">
+<title>Portfolio | Isaiah Mitchell</title>
+<title>Bootstrap Example</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
- 
-  <meta charset="UTF-8">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+<title>CSS Positioning</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css" integrity="sha256-7VVaJ5GDwFQiLIc+eNksQLUSSY5JNZtqv9o2BI8UGYg=" crossorigin="anonymous" />
+<link href="https://fonts.googleapis.com/css?famile=Lato" rel="stylesheet">
+<meta charset="UTF-8">
   <title>CSS Positioning</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css" integrity="sha256-7VVaJ5GDwFQiLIc+eNksQLUSSY5JNZtqv9o2BI8UGYg=" crossorigin="anonymous" />
   <link rel="stylesheet" href="reset.css">
   <link rel="stylesheet" href="static.css">
-  
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="assets/css/style.css">
   <link rel="stylesheet" type="text/css" href="style.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
 </head>
-
-<body>
-    <header id="masthead">
-    <div class="page-header header container-fluid">
-      <a href="index.html" id="logo">Isaiah Mitchell</a>
-      <nav>
-        <a href="index.html">About Me</a>   
-        <a href="portfolio.html">Portfolio</a>
-        <a href="contact.html">Contact</a>   
-      </nav>
-    </div>
-  </header>
-
-  <div id="main-container" class="container">
-    <section class="main-section">
-      <h1>About Me</h1>
-
-      <img src="assets/images/IMG-3445.JPG" class="auth-image" alt="Isaiah Mitchell">
-
-      <p>I am who I am. Theres too many ways to describe just a little about me.</p>
-
-      <p>In one word I would say im a Generalist.</p>
-
-      <p>"Sacrifice = Currency to get whatever you</p>
-  <aside>
-    <div class="card text-right" style="width: 18rem;">
-      <div class="card-body">
-          <h5 class="card-title">Special title treatment</h5>
-            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
-      </div>
-    </div>
-  </aside>
-</section>
   
-</div>
-
-  <footer>
-    <div class="container">
-         Copyright &copy;
+<body>
+  <header>
+    <div class="top">
+      <a href="#" class="menu_icon"><i class="material-icons">dehaze</i></a>
     </div>
-  </footer>
-<!-- jQuery CDN -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  
+    <div id="masthead">
+      <div class="w3-sidebar w3-bar-block w3-card w3-animate-left" style="display: none" id="mySidebar"></div>
+        <button class="w3-bar-item w3-button w3-large" onclick="w3_close()"> Close&times;</button>
+        <a href="#" class="w3-bar-item w3-button">About Me</a>
+        <a href="#" class="w3-bar-item w3-button">Portfolio</a>
+        <a href="#" class="w3-bar-item w3-button">Contact</a>
+      </div> 
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+      <nav class="navbar navbar-inverse navbar-static-top" role="navigation">
+        <div class="container">
+          <ul class="nav navbar-nav">
+            <li></li>
+          </ul>
 
-<!-- Bootstrap JavaScript CDN -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+        </div>
+      </nav>
+  
+      <div id="main">
+        <div class="w3-teal">
+          <button id="openNav" class="w3-button w3-teal w3-xLarge" onclick="w3_open()"&#9776;></button>
+        </div>
+
+        <div class="w3-container">
+          <h1>Isaiah Mitchell</h1>
+        </div>
+      </div>    
+    </div> 
+
+    <img src="assets/images/IMG-3445.JPG" alt="Logo" style="width:100%;">
+
+    <div class="w3-container"></div>
+            
+      <div id="main-container" class="container-fluid" style="margin-top: 80px;">
+        <section class="main-section">
+          <h1>About Me</h1>
+    
+          <img src="assets/images/IMG-3445.JPG" class="rounded-circle" alt="Isaiah Mitchell"width="304" height="236">
+
+              <p style="border: 3px; border-style:solid; border-color:#000; padding:3em" 
+                
+                So I am who I am.<br> 
+                Sacrifice is currency to get whatever you want.<br>
+                Sacrifice is currency to get whatever you.<br>
+                Sacrifice is currency to get whatever you.<br>
+                
+              </p>
+              <iframe width="420" height="315"
+                src="https://youtube.com/embed/IfshI9thUu4?autoplay=1">
+              </iframe>
+              <div>
+                <a href="default.asp">
+                  <img src="assets/images/iconfinder_github_291716 (2).png" alt= "Github" style="float:right"; width: 42px;height: 42px; border:0;>
+                </a>
+                <a href="default.asp">
+                  <img src="assets/images/iconfinder_linkedin_circle_color_107178.png" alt=LinkedIn style="float:right"; width: 42px;height: 42px; border:0;>
+                </a>   
+                <a href="default.asp">
+                  <img src="assets/images/icons8-color-48.png" alt= "Stack Overflow" style="float:right"; width: 42px;height: 42px; border:0;>
+                </a>
+    </div>               
+    </section>    
+    <footer>
+      <div class="container">
+        Copyright &copy;
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+
+    <script type="text/javascript" src="js/script.js"></script>
+    
+  </div>
 </body>
 
 </html>
