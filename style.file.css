@@ -10,23 +10,23 @@ header {
 	align-items: center;
 	justify-content: center;
 }
-header > h1 {
+header h1 {
 	width: calc(100% - 160px);
 	text-align: center;
 	font-size: 20px;
-	color: white;
+	color: aqua;
 }
-header > .top {
+header.top {
 	position: absolute;
 	left: 20px;
 }
-header > .top a.menu_icon i {
+header.top a.menu_icon i {
 	color: #000;
 	font-size: 40px;
 	padding-top: 5px;
 	transition: .2s ease;
 }
-header > .top a.menu_icon:hover i {
+header.top a.menu_icon:hover i {
 	color: #fff;
 }
 nav.menu {
